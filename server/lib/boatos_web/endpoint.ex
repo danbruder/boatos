@@ -41,5 +41,6 @@ defmodule BoatosWeb.Endpoint do
     signing_salt: "SwPAo7/o"
 
   plug CORSPlug
+
   plug BoatosWeb.Router
 end

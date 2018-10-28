@@ -46,8 +46,8 @@ export default function() {
 }
 
 function UserLoginPage() {
-  const [_email, setEmail] = useState('');
-  const [_password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   useEffect(() => {
     document.title = `Log in`;
@@ -71,6 +71,7 @@ function UserLoginPage() {
                 type="email"
                 name="email-address"
                 id="email-address"
+                value={email}
                 onChange={handleInputChange(setEmail)}
               />
             </div>
@@ -83,6 +84,7 @@ function UserLoginPage() {
                 type="password"
                 name="password"
                 id="password"
+                value={password}
                 onChange={handleInputChange(setPassword)}
               />
             </div>

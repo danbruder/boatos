@@ -7,5 +7,6 @@ defmodule BoatosWeb.Router do
 
   scope "/api", BoatosWeb do
     pipe_through :api
+    resources "/photos", PhotoController
   end
 end

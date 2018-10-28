@@ -40,6 +40,7 @@ defmodule Boatos.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:cowboy, "~> 1.0"},
+      {:plug_cowboy, "~> 1.0"},
       {:cors_plug, "~> 1.5"}
     ]
   end
